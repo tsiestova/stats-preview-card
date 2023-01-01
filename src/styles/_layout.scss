@@ -1,0 +1,12 @@
+body {
+  background: #0a0c1c;
+}
+
+.layout {
+  padding: 88px 24px;
+  height: 100%;
+
+  @include breakpoint(desktop) {
+    display: flex;
+  }
+}
