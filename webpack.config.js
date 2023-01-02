@@ -3,6 +3,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const stylesHandler = "style-loader";
 const CopyPlugin = require("copy-webpack-plugin");

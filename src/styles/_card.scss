@@ -4,20 +4,21 @@
 
   @include breakpoint(desktop) {
     max-width: 1110px;
-    margin: auto;
+    //margin: auto;
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
 .card__picture {
-  width: 327px;
   height: 240px;
   position: relative;
+  margin: auto;
 
   @include breakpoint(desktop) {
     width: 49%;
-    height: 446px;
+    height: auto;
+    margin: 0;
   }
 
   img {
@@ -45,10 +46,7 @@
 
   @include breakpoint(desktop) {
     width: 51%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 54px 106px 17px 57px;
+    padding: 71px 111px 38px 72px;
   }
 }
 
@@ -63,6 +61,8 @@
   @include breakpoint(desktop) {
     font-size: 36px;
     line-height: 44px;
+    text-align: left;
+    margin-bottom: 26px;
   }
 }
 
@@ -74,12 +74,18 @@
   color: #ffffff;
   margin-bottom: 39px;
   opacity: 0.75;
+
+  @include breakpoint(desktop) {
+    text-align: left;
+    margin-bottom: 70px;
+  }
 }
 
 .card__list {
   @include breakpoint(desktop) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 32px 0 0;
   }
 
   .card__item {
@@ -92,6 +98,10 @@
       line-height: 29px;
       text-align: center;
       margin-bottom: 3px;
+
+      @include breakpoint(desktop) {
+        text-align: left;
+      }
     }
 
     .card__item-number {
