@@ -7,6 +7,6 @@
 
 - Semantic HTML5 markup
 - SCSS properties
-- Grid
+- Flex
 - Mobile-first workflow   
   
